@@ -100,9 +100,9 @@ function theme_boost_swift_get_main_scss_content($theme) {
     if ($filename == 'default.scss') {
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost_swift/scss/preset/default.scss');
         } else if ($filename == 'UnitecTePukengaDark.scss') {
-        $scss .= file_get_contents($CFG->dirroot . '/theme/boost_unitec_tepukenga_dark/scss/preset/UnitecTePukengaDark.scss');
+        $scss .= file_get_contents($CFG->dirroot . '/theme/boost_swift/scss/preset/UnitecTePukengaDark.scss');
     } else if ($filename == 'UnitecTePukengaLight.scss') {
-        $scss .= file_get_contents($CFG->dirroot . '/theme/boost_unitec_tepukenga_dark/scss/preset/UnitecTePukengaLight.scss');
+        $scss .= file_get_contents($CFG->dirroot . '/theme/boost_swift/scss/preset/UnitecTePukengaLight.scss');
     }  else if ($filename == 'unitec-00.scss') {
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost_swift/scss/preset/unitec-00.scss');
     } else if ($filename == 'unitec-01.scss') {
