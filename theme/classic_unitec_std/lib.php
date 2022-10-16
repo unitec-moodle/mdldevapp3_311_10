@@ -43,9 +43,9 @@ function theme_classic_unitec_std_get_main_scss_content($theme) {
     if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_classic_unitec_std', 'preset', 0, '/', $filename))) {
         $scss .= $presetfile->get_content();
     } else if ($filename == 'UnitecTePukengaDark.scss') {
-        $scss .= file_get_contents($CFG->dirroot . '/theme/classic_var_01/scss/preset/UnitecTePukengaDark.scss');
+        $scss .= file_get_contents($CFG->dirroot . '/theme/classic_unitec_std/scss/preset/UnitecTePukengaDark.scss');
     } else if ($filename == 'UnitecTePukengaLight.scss') {
-        $scss .= file_get_contents($CFG->dirroot . '/theme/classic_var_01/scss/preset/UnitecTePukengaLight.scss');
+        $scss .= file_get_contents($CFG->dirroot . '/theme/classic_unitec_std/scss/preset/UnitecTePukengaLight.scss');
     } else if ($filename == 'unitec-00.scss') {
         $scss .= file_get_contents($CFG->dirroot . '/theme/classic_unitec_std/scss/preset/unitec-00.scss');
     } else if ($filename == 'unitec-01.scss') {
