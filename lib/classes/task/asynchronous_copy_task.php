@@ -66,8 +66,9 @@ class asynchronous_copy_task extends adhoc_task {
             delete_course($restorerecord->itemid, false); // Clean up partially created destination course.
             return; // Return early as we can't continue.
         }
+        $rc = \restore_controller::load_controller($restoreid);  // Get the restore controller by restore id.
         $bc->set_progress(new \core\progress\db_updater($backuprecord->id, 'backup_controllers', 'progress'));
-        $copyinfo = $bc->get_copy();
+        $copyinfo = $rc->get_copy();
         $backupplan = $bc->get_plan();
 
         $keepuserdata = (bool)$copyinfo->userdata;
